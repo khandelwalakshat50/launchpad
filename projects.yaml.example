@@ -1,0 +1,31 @@
+# Copy to your home directory:
+#   cp projects.yaml.example ~/projects.yaml
+#
+# Edit paths and ports to match your machine.
+
+projects:
+  - name: my-vibe-app
+    path: ~/my-vibe-app
+    frontend_port: 5173
+    backend_port: 8000
+    description: "A side project built with Cursor"
+    pinned: true
+    start_command: "npm run dev"
+
+  - name: my-docker-app
+    path: ~/my-docker-app
+    frontend_port: 5177
+    backend_port: 8002
+    description: "Compose stack (n8n, etc.)"
+    pinned: false
+    runtime: docker
+    start_command: "docker compose up -d"
+
+  - name: docs-only
+    path: null
+    frontend_port: null
+    backend_port: null
+    description: "Link card — no local server"
+    pinned: false
+    url: "https://example.com"
+    start_command: null
