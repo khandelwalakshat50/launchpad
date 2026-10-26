@@ -31,7 +31,7 @@ Built for **macOS** (Docker Desktop integration uses `open -a Docker`). Linux ma
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/launchpad.git
+git clone https://github.com/khandelwalakshat50/launchpad.git
 cd launchpad
 npm install
 ```
